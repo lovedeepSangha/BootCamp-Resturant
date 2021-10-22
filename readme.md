@@ -4,6 +4,7 @@
 For further reference, please consider the following sections:
 
 Pre-requisite
+#
 1:- Java 11 and Apache Kafka && H2 is inbase Database used   (can be installed via docker file given in setup name docker-compose.yml)
 #
 2:- install kafka via command in directory "docker-compose up -d"
