@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
 
 @Service
 public class OrderService {
@@ -33,7 +32,6 @@ public class OrderService {
 
 
     public void changeOrderStatus(Order order, OrderStatus orderStatus) {
-        System.out.println(order.getId() + "  " + orderStatus.getValue() + "  " + new Date().getSeconds());
         order.setOrderStatus(orderStatus);
         orderRepository.save(order);
 
